@@ -59,7 +59,7 @@ public class PersonController {
 	   }
 	   
 	   /*---Delete a person by id---*/
-	   @DeleteMapping("/book/{id}")
+	   @DeleteMapping("/person/{id}")
 	   public ResponseEntity<?> delete(@PathVariable("id") long id) {
 		   personService.delete(id);
 	      return ResponseEntity.ok().body("Person has been deleted successfully.");
